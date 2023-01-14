@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/rec_navbottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/rectangle"
+        android:layout_marginBottom="-15dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/search_page"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_search_nonactive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_page"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_home_nonactive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_page"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_manage_accounts_active"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/ic_profile_picture"
+        app:layout_constraintBottom_toBottomOf="@+id/home_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <ImageView
+        android:id="@+id/ic_arrowback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/ic_info"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_info"
+        app:layout_constraintBottom_toBottomOf="@+id/home_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/btn_editprofile"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#356AD0"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/home_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_picture"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/user_fullname"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_columns_profile"
+        android:drawableLeft="@drawable/ic_account"
+        android:padding="10dp"
+        android:text=" E. Andika Alfira Damara"
+        android:textColor="#625B5B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editprofile" />
+
+    <EditText
+        android:id="@+id/user_birthdate"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_columns_profile"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:padding="10dp"
+        android:text=" 05/10/2001"
+        android:textColor="#625B5B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_fullname" />
+
+    <EditText
+        android:id="@+id/user_gender"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_columns_profile"
+        android:drawableLeft="@drawable/ic_male"
+        android:padding="10dp"
+        android:text=" Male"
+        android:textColor="#625B5B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_birthdate" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_columns_profile"
+        android:drawableLeft="@drawable/ic_email"
+        android:padding="10dp"
+        android:text=" e.20si@mahasiswa.pcr.ac.id"
+        android:textColor="#625B5B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_gender" />
+
+    <EditText
+        android:id="@+id/user_phone"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_columns_profile"
+        android:drawableLeft="@drawable/ic_phone"
+        android:padding="10dp"
+        android:text=" +62 8127 7100 045"
+        android:textColor="#625B5B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_email" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="LOG OUT"
+        android:textStyle="bold"
+        android:textColor="#625B5B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

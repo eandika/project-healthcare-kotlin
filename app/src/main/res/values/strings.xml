@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HealthCare</string>
+    <string name="next">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="judul_menu">List Dokter Healthcare</string>
+    <string name="nama_dokter">Nama Dokter</string>
+    <string name="contoh_nama">EAAD</string>
+    <string name="kompetensi_dokter">Kompetensi Dokter</string>
+</resources>
