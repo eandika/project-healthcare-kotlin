@@ -31,5 +31,10 @@ class DetailedActivity : AppCompatActivity() {
             val intent = Intent(this, MenuListActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnBooknow.setOnClickListener {
+            val intent = Intent(this, InputDataActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

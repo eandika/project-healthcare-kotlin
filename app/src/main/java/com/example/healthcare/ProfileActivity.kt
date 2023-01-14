@@ -37,6 +37,11 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.searchPage.setOnClickListener {
+            val intent = Intent(this, MenuListActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.icArrowback.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)

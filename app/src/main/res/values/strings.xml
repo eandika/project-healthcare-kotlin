@@ -8,4 +8,24 @@
     <string name="nama_dokter">Nama Dokter</string>
     <string name="contoh_nama">EAAD</string>
     <string name="kompetensi_dokter">Kompetensi Dokter</string>
+    <string-array name="jenis_kelamin">
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+    <string-array name="nama_dokter">
+        <item>drg. Nevada Permata Anvini</item>
+        <item>drg. Alexander Bryan</item>
+        <item>drg. Iwan</item>
+        <item>drg. Sita Rose Nandiasa, M.Si</item>
+        <item>dr. Hermawan, Sp.A</item>
+        <item>dr. Melia Yunita, Sp.A.M.Sc</item>
+        <item>dr. Dedy Lizal, Sp.JP</item>
+        <item>dr. Sanny March Silaban, Sp.JP</item>
+    </string-array>
+    <string-array name="pilih_jam">
+        <item>08.00</item>
+        <item>10.00</item>
+        <item>13.00</item>
+        <item>15.00</item>
+    </string-array>
 </resources>

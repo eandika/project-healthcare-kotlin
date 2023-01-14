@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputDataActivity">
+
+    <ImageView
+        android:id="@+id/rec_navbottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="672dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="-11dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/search_page"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/ic_search_nonactive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_page"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="173dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/ic_home_nonactive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_page"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="301dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/ic_manage_accounts_nonactive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_arrowback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/rec_input"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <ImageView
+        android:id="@+id/ic_cardinput"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_co_present"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_input"
+        app:layout_constraintEnd_toEndOf="@+id/rec_input"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="@+id/rec_input"
+        app:layout_constraintTop_toTopOf="@+id/rec_input"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:text="Mohon isi data yang sebenarnya!"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_input"
+        app:layout_constraintEnd_toEndOf="@+id/rec_input"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="@+id/rec_input"
+        app:layout_constraintTop_toTopOf="@+id/rec_input"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <ImageView
+        android:id="@+id/rec_inputform"
+        android:layout_width="350dp"
+        android:layout_height="490dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/rectangle3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_input" />
+
+    <TextView
+        android:id="@+id/txt_infoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pasien"
+        android:textColor="#625B5B"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toTopOf="@+id/rec_inputform"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:background="@drawable/border_columns"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Masukkan nama lengkap"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/txt_infoname"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_infogender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textColor="#625B5B"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/input_name"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <Spinner
+        android:id="@+id/spinner_jk"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/txt_infogender"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:id="@+id/txt_infoumur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usia"
+        android:textColor="#625B5B"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_jk"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <EditText
+        android:id="@+id/input_umur"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:background="@drawable/border_columns"
+        android:hint="Masukkan usia anda"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/txt_infoumur"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_infonamadokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Dokter"
+        android:textColor="#625B5B"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/input_umur"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <Spinner
+        android:id="@+id/spinner_namadokter"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/txt_infonamadokter"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_infotanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Appointment"
+        android:textColor="#625B5B"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_namadokter"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="320dp"
+        android:layout_height="91dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/txt_infotanggal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_infojam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="Jam Appointment"
+        android:textColor="#625B5B"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform" />
+
+    <Spinner
+        android:id="@+id/spinner_jam"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
+        app:layout_constraintStart_toStartOf="@+id/rec_inputform"
+        app:layout_constraintTop_toBottomOf="@+id/txt_infojam"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_book"
+        android:layout_width="350dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#356AD0"
+        android:text="book now"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_inputform"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

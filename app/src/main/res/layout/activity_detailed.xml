@@ -53,4 +53,15 @@
         android:textColor="@color/blue"
         android:layout_marginTop="30dp"
         android:layout_marginStart="10dp" />
+
+    <Button
+        android:id="@+id/btn_booknow"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/app_bar_height"
+        android:backgroundTint="#356AD0"
+        android:text="SET AN APPOINTMENT"
+        android:textColor="@color/white" />
+
 </LinearLayout>
