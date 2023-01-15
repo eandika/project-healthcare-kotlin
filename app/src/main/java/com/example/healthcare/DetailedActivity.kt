@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.healthcare.databinding.ActivityDetailedBinding
+import com.example.healthcare.view.input.InputDataActivity
 
 class DetailedActivity : AppCompatActivity() {
 

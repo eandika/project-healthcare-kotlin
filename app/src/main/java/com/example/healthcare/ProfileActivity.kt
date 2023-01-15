@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.healthcare.databinding.ActivityProfileBinding
+import com.example.healthcare.view.history.HistoryActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class ProfileActivity : AppCompatActivity() {
@@ -49,6 +50,11 @@ class ProfileActivity : AppCompatActivity() {
 
         binding.icInfo.setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnHistory.setOnClickListener {
+            val intent = Intent(this, HistoryActivity::class.java)
             startActivity(intent)
         }
     }

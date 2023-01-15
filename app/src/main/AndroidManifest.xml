@@ -15,15 +15,16 @@
         android:theme="@style/Theme.HealthCare"
         tools:targetApi="31">
         <activity
-            android:name=".HistoryActivity"
-            android:exported="false">
+            android:name=".view.history.HistoryActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".InputDataActivity"
-            android:exported="false">
+            android:name=".view.input.InputDataActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

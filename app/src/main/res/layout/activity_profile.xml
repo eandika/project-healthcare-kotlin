@@ -99,13 +99,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_picture"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/user_fullname"
         android:layout_width="285dp"
         android:layout_height="51dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/border_columns_profile"
         android:drawableLeft="@drawable/ic_account"
         android:padding="10dp"
@@ -121,7 +121,7 @@
         android:id="@+id/user_birthdate"
         android:layout_width="285dp"
         android:layout_height="51dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/border_columns_profile"
         android:drawableLeft="@drawable/ic_calendar"
         android:padding="10dp"
@@ -136,7 +136,7 @@
         android:id="@+id/user_gender"
         android:layout_width="285dp"
         android:layout_height="51dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/border_columns_profile"
         android:drawableLeft="@drawable/ic_male"
         android:padding="10dp"
@@ -151,7 +151,7 @@
         android:id="@+id/user_email"
         android:layout_width="285dp"
         android:layout_height="51dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/border_columns_profile"
         android:drawableLeft="@drawable/ic_email"
         android:padding="10dp"
@@ -166,7 +166,7 @@
         android:id="@+id/user_phone"
         android:layout_width="285dp"
         android:layout_height="51dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/border_columns_profile"
         android:drawableLeft="@drawable/ic_phone"
         android:padding="10dp"
@@ -178,16 +178,28 @@
         app:layout_constraintTop_toBottomOf="@+id/user_email" />
 
     <Button
+        android:id="@+id/btn_history"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#356AD0"
+        android:text="HISTORY"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_phone" />
+
+    <Button
         android:id="@+id/btn_logout"
         android:layout_width="285dp"
         android:layout_height="51dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#FFFFFF"
         android:text="LOG OUT"
         android:textStyle="bold"
         android:textColor="#625B5B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_phone" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_history" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

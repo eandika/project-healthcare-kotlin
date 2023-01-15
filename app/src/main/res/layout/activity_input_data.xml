@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InputDataActivity">
+    tools:context=".view.input.InputDataActivity">
 
     <ImageView
         android:id="@+id/rec_navbottom"
@@ -125,7 +125,7 @@
     <ImageView
         android:id="@+id/rec_inputform"
         android:layout_width="350dp"
-        android:layout_height="490dp"
+        android:layout_height="450dp"
         android:layout_marginTop="-5dp"
         android:background="@drawable/rectangle3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -240,17 +240,20 @@
         android:textColor="#625B5B"
         app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
         app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="@+id/rec_inputform"
         app:layout_constraintTop_toBottomOf="@+id/spinner_namadokter"
         app:layout_constraintVertical_bias="0.086" />
 
-    <DatePicker
-        android:id="@+id/date_picker"
+    <EditText
+        android:id="@+id/inputTanggal"
         android:layout_width="320dp"
-        android:layout_height="91dp"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner"
+        android:layout_height="41dp"
+        android:hint="Masukkan tanggal"
+        android:inputType="date"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/rec_inputform"
         app:layout_constraintEnd_toEndOf="@+id/rec_inputform"
         app:layout_constraintStart_toStartOf="@+id/rec_inputform"
