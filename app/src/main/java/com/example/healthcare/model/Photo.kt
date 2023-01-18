@@ -10,5 +10,7 @@ data class Photo(
     @SerializedName("specialist")
     val specialist: String?,
     @SerializedName("image_url")
-    val image_url: String?
+    val image_url: String?,
+    @SerializedName("desc")
+    val desc: String?
 )

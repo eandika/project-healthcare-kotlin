@@ -13,11 +13,10 @@ import com.bumptech.glide.request.RequestOptions
 import com.example.healthcare.DetailedActivity
 import com.example.healthcare.R
 import com.example.healthcare.model.Photo
-import com.example.healthcare.viewmodel.DetailActivity
-import kotlinx.android.synthetic.main.item_list.view.*
+import kotlinx.android.synthetic.main.detail_list.view.*
 
-class PhotoListAdapter(var photos: ArrayList<Photo>):
-    RecyclerView.Adapter<PhotoListAdapter.ViewHolder>() {
+class DetailListAdapter(var photos: ArrayList<Photo>):
+    RecyclerView.Adapter<DetailListAdapter.ViewHolder>() {
 
     fun updatePhotos(newPhotos: List<Photo>) {
         photos.clear()
@@ -26,7 +25,7 @@ class PhotoListAdapter(var photos: ArrayList<Photo>):
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int) = ViewHolder (
-        LayoutInflater.from(parent.context).inflate(R.layout.item_list, parent, false)
+        LayoutInflater.from(parent.context).inflate(R.layout.detail_list, parent, false)
     )
 
     override fun getItemCount() = photos.size
@@ -37,19 +36,13 @@ class PhotoListAdapter(var photos: ArrayList<Photo>):
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
         fun bind(photos: Photo){
-            val detail :ImageView = itemView.imageview
+            val detail : ImageView = itemView.imageview2
             val requestOp = RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background)
                 .error(R.drawable.ic_launcher_background)
-            itemView.namadokter.text = photos.name
-            itemView.spesialis.text = photos.specialist
-            itemView.setOnClickListener { view ->
-                val intent = Intent(itemView.context, DetailActivity::class.java)
-                intent.putExtra("detailName", photos.name)
-                intent.putExtra("detailImage", photos.image_url)
-                intent.putExtra("detailKomp", photos.desc)
-                itemView.context.startActivity(intent)
-            }
+            itemView.namadokter2.text = photos.name
+            itemView.spesialis2.text = photos.specialist
+            itemView.desc.text = photos.desc
 
             val alamaturl = photos.image_url.toString().filterNot {
                 it.isWhitespace()

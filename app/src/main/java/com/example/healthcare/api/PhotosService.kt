@@ -7,7 +7,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 class PhotosService {
-    private val BASE_URL = "https://retoolapi.dev/O7ceii"
+    private val BASE_URL = "https://retoolapi.dev/Q0ZwMY/"
     private val api: PhotosApi
 
     init {
