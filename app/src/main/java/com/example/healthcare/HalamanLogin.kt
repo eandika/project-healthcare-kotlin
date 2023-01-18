@@ -27,7 +27,7 @@ class HalamanLogin : Fragment() {
             val intent = Intent(this@HalamanLogin.requireContext(), LoginActivity::class.java)
             startActivity(intent)
 
-            Toast.makeText(context, "Halaman Login", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "", Toast.LENGTH_SHORT).show()
 
         }
 

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.healthcare.databinding.ActivityProfileBinding
+import com.example.healthcare.view.ListRetrofit
 import com.example.healthcare.view.history.HistoryActivity
 import com.google.firebase.auth.FirebaseAuth
 
@@ -39,7 +40,7 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         binding.searchPage.setOnClickListener {
-            val intent = Intent(this, MenuListActivity::class.java)
+            val intent = Intent(this, ListRetrofit::class.java)
             startActivity(intent)
         }
 

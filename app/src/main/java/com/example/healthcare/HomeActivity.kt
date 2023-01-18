@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.healthcare.databinding.ActivityHomeBinding
+import com.example.healthcare.view.ListRetrofit
 
 class HomeActivity : AppCompatActivity() {
 
@@ -27,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         binding.searchPage.setOnClickListener {
-            val intent = Intent(this, MenuListActivity::class.java)
+            val intent = Intent(this, ListRetrofit::class.java)
             startActivity(intent)
         }
 
